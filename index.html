@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>chat</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 <style>
@@ -315,7 +315,7 @@
 
   /* input bar */
   #input-bar {
-    padding: 14px 16px 18px;
+    padding: 14px 16px calc(18px + env(safe-area-inset-bottom, 16px));
     display: flex;
     align-items: flex-end;
     gap: 10px;
